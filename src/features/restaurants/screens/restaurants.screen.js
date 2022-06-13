@@ -27,7 +27,7 @@ const LoadingContainer = styled.View`
 export const RestaurantsScreen = ({ navigation }) => {
   const [searchQuery, setSearchQuery] = useState("");
   const { restaurants, isLoading } = useContext(RestaurantsContext);
-  console.log(navigation);
+  // console.log(navigation);
 
   return (
     <SafeArea>

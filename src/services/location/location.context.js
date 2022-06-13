@@ -15,7 +15,7 @@ export const LocationContextProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    //    console.log(searchKeyword);
+    //console.log(searchKeyword);
     if (!keyword.length) {
       // don't do anything
       return;
@@ -25,7 +25,7 @@ export const LocationContextProvider = ({ children }) => {
       .then((result) => {
         setIsLoading(false);
         setLocation(result);
-        console.log(result);
+        // console.log(result);
       })
       .catch((err) => {
         setIsLoading(false);
